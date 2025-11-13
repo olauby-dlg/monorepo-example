@@ -1,8 +1,8 @@
-from lib import module1
+from mylib import foo
 
 
 def main():
-    module1.foo()
+    foo()
 
 
 if __name__ == "__main__":

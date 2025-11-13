@@ -5,8 +5,8 @@
             "path": "./app",
         },
         {
-            "name": "lib",
-            "path": "./lib",
+            "name": "mylib",
+            "path": "./mylib",
         },
         {
             "name": "root",
@@ -14,12 +14,12 @@
         },
     ],
     "settings": {
+        "python.languageServer": "Pylance",
+        "python.analysis.autoImportCompletions": true,
+        "python.analysis.indexing": true,
+        "python.analysis.userFileIndexingLimit": -1,
         "python.analysis.packageIndexDepths": [
-            { "name": "app", "depth": 2}, 
-            { "name": "lib", "depth": 2},
+            { "name": "mylib", "depth": 2, "includeAllSymbols": true},
         ],
-        "python.testing.unittestEnabled": false,
-        "python.testing.pytestEnabled": true,
-        "python.testing.pytestArgs": [ "tests", "-vv" ],
     },
 }
