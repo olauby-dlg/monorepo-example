@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "app"
+version = "0.0.1"
+description = ""
+authors = []
+
+[tool.poetry.dependencies]
+python = ">=3.12 <3.13"
+lib = { path = "../lib", develop = true }
+
+[tool.poetry.group.dev.dependencies]
+pyright = "1.1.392"
+ruff = "0.7.2"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.4.1"

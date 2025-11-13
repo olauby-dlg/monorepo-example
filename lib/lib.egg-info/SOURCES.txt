@@ -1,0 +1,7 @@
+pyproject.toml
+lib/module1.py
+lib.egg-info/PKG-INFO
+lib.egg-info/SOURCES.txt
+lib.egg-info/dependency_links.txt
+lib.egg-info/top_level.txt
+tests/test_module1.py

@@ -1,0 +1,25 @@
+{
+    "folders": [
+        {
+            "name": "app",
+            "path": "./app",
+        },
+        {
+            "name": "lib",
+            "path": "./lib",
+        },
+        {
+            "name": "root",
+            "path": ".",
+        },
+    ],
+    "settings": {
+        "python.analysis.packageIndexDepths": [
+            { "name": "app", "depth": 2}, 
+            { "name": "lib", "depth": 2},
+        ],
+        "python.testing.unittestEnabled": false,
+        "python.testing.pytestEnabled": true,
+        "python.testing.pytestArgs": [ "tests", "-vv" ],
+    },
+}
