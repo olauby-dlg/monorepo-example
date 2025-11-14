@@ -23,7 +23,6 @@ Trying to solve the problem:
     ├── .venv
     ├── mylib
     │   └── __init__.py
-    │   └── module.py
     └── pyproject.toml
 ```
 
