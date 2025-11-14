@@ -33,6 +33,18 @@ When running `poetry install/update/sync` in [app][app/], it generates a folder 
 Editable libraries break pyright path finding:
 - When a dependency is installed as editable with PEP660, you get `Import "..." could not be resolved`
 - See pyright issue: https://github.com/microsoft/pyright/issues/3846
-- Solution is to add path to library to [pyright extraPaths](app/pyproject.toml)
 
 This is not an issue you encouter with legacy installation of editable libraries, as it was creating simlinks in site-packages.
+
+**Solution**: add path to library to [pyright extraPaths](app/pyproject.toml)
+
+
+### Ruff
+
+```
+2025-11-14 14:44:46.219552000  WARN Ignoring request because snapshot for path `Url { scheme: "file", cannot_be_a_base: false, username: "", password: None, host: None, port: None, path: ".../app/app/main.py", query: None, fragment: None }` doesn't exist.
+```
+
+Claude AI assumes it is because ruff doesn't know what pyproject.toml configuration it should use.
+
+**Solution**: add "ruff.configuration": "${workspaceFolder}/pyproject.toml", to [workspace settings](monorepo.code-workspace)
