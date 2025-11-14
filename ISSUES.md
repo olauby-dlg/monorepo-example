@@ -6,12 +6,18 @@
 
 In VSCode, when typing the name of an object (e.g. `bar`) from [mylib](mylib/mylib/__init__.py) in [app](app/app/main.py), no auto-import is suggested.
 
-Weird behaviour:
 
-- Auto import works while LSP is restarting
-- Auto import stop working when LSP has restarted
+Observations:
 
-> When restarting the python server, and immediatly writting bar in app I get the auto import suggestion. But when doing it a few seconds later I don't have it.
+- Auto-import does not work when app is open individually
+- When restarting the python server, and immediatly writting bar in app I get the auto import suggestion. But when doing it a few seconds later I don't have it:
+    - Auto import works while LSP is restarting
+    - Auto import stop working when LSP has restarted
+
+Solution ?
+
+Adding `include=["../mylib"]` to pyright config seems to fix the issue
+
 
 ### Poetry generates egg-info folder
 
