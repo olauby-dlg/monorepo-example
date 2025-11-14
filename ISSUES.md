@@ -14,11 +14,23 @@ Observations:
     - Auto import works while LSP is restarting
     - Auto import stop working when LSP has restarted
 
+
 Solution ?
 
 Adding `include=["../mylib"]` to pyright config seems to fix the issue:
 
-- Re-exports are not suggested: https://github.com/microsoft/pylance-release/issues/5654
+- Re-exports are not suggested:
+    - Mentionned here: https://github.com/microsoft/pylance-release/issues/5654
+    - Supposed to be fixed: https://github.com/microsoft/pylance-release/issues/4065
+
+- The option includeAliasesFromUserFiles breaks the import paths:
+    - `"python.analysis.includeAliasesFromUserFiles": true`
+    - the issue persist even after removing the option...
+
+- Sometimes I get suggestions to import `baz`/`bar` from `myapp.myapp` instead of from `myapp.myapp`
+    - includeAliasesFromUserFiles triggered it a few time
+    - probably because of app workspace been inside root workspace
+    - but very unsure of what is going on
 
 
 ### Poetry generates egg-info folder
