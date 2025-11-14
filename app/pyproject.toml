@@ -9,8 +9,8 @@ python = ">=3.13,<3.14"
 mylib = { path = "../mylib", develop = true }
 
 [tool.poetry.group.dev.dependencies]
-pyright = "1.1.392"
-ruff = "0.7.2"
+pyright = "1.1.407"
+ruff = "0.14.5"
 
 [tool.pyright]
 extraPaths = ["../mylib"]
