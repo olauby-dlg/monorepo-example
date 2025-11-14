@@ -13,4 +13,4 @@ pyright = "1.1.392"
 ruff = "0.7.2"
 
 [tool.pyright]
-extraPaths = ["../mylib"]  # https://github.com/microsoft/pyright/issues/3846
+extraPaths = ["../mylib"]
