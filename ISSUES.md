@@ -16,7 +16,9 @@ Observations:
 
 Solution ?
 
-Adding `include=["../mylib"]` to pyright config seems to fix the issue
+Adding `include=["../mylib"]` to pyright config seems to fix the issue:
+
+- Re-exports are not suggested: https://github.com/microsoft/pylance-release/issues/5654
 
 
 ### Poetry generates egg-info folder
