@@ -18,8 +18,5 @@
         "python.analysis.autoImportCompletions": true,
         "python.analysis.indexing": true,
         "python.analysis.userFileIndexingLimit": -1,
-        "python.analysis.packageIndexDepths": [
-            { "name": "mylib", "depth": 2, "includeAllSymbols": true},
-        ],
     },
 }
