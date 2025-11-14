@@ -27,13 +27,26 @@ Trying to solve the problem:
     └── pyproject.toml
 ```
 
-Using **VSCode** with **Pylance** lsp.
+Using **poetry** (2.1.3) as dependency manager.
 
-VSCode **Workspace** mode:
+Using **VSCode** with extensions:
+
+- Python
+- Python Environments
+- **Pylance** (LSP based on **pyright**)
+- Ruff - useless here but force of habbit
+
+Using VSCode **Workspace** mode:
+
 - [monorepo.code-workspace](monorepo.code-workspace)
 - Enable python-interpreter / LSP switching
 - Enable vscode tests exploration (not in this project)
 
+
+## About
+
+- `myapp` has a dependency to `numpy`: just for the sake of testing auto-import from a third party library (working)
+- `app` has a editable-dependency to `myapp`: auto-imports of myapp objects in app do not work
 
 ## Conclusion
 

@@ -1,3 +1,6 @@
-from mylib.module import foo, bar
+def foo():
+    print("foo")
 
-__all__ = ["foo", "bar"]
+
+def bar():
+    print("bar")

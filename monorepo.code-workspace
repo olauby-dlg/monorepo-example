@@ -17,6 +17,5 @@
         "python.languageServer": "Pylance",
         "python.analysis.autoImportCompletions": true,
         "python.analysis.indexing": true,
-        "python.analysis.userFileIndexingLimit": -1,
     },
 }
