@@ -15,7 +15,7 @@ Observations:
     - Auto import stop working when LSP has restarted
 
 
-Solution ?
+#### Option A: use include
 
 Adding `include=["../mylib"]` to pyright config seems to fix the issue:
 
@@ -31,6 +31,12 @@ Adding `include=["../mylib"]` to pyright config seems to fix the issue:
     - includeAliasesFromUserFiles triggered it a few time
     - probably because of app workspace been inside root workspace
     - but very unsure of what is going on
+
+#### Option B: Remove Pylance
+
+Uninstall Pylance.
+Install Pyright extension from microsoft.
+Switch lsp to Jedi.
 
 
 ### Poetry generates egg-info folder

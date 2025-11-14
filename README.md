@@ -49,4 +49,8 @@ Using VSCode **Workspace** mode:
 
 ## Conclusion
 
-Work in Progress. See [issues](ISSUES.md).
+Feels like Pylance is just not good for mono-repositories.
+
+I removed it and it works fine.
+
+See [issues](ISSUES.md).

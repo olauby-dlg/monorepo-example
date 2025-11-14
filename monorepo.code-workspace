@@ -14,9 +14,7 @@
         },
     ],
     "settings": {
-        "python.languageServer": "Pylance",
+        "python.languageServer": "Jedi",
         "python.analysis.autoImportCompletions": true,
-        "python.analysis.indexing": true,
-        "ruff.configuration": "${workspaceFolder}/pyproject.toml",
     },
 }
